@@ -4,37 +4,61 @@ p {
     width: auto;
 }
 
+/* Tile Managment */
+
+#tiles {
+    display: flex;
+    justify-content: center;
+}
+.column1 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.column2 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
 /* Nav Bar */
 
-.links {
-    color: inherit;
-    text-decoration: inherit;
-    opacity: 75%;
-}
 .active {
     opacity: 100%;
 }
 .nav {
     color: white;
-    background-color: #333333;
+    background-color: #000000;
     font-family: 'Roboto', sans-serif;
     display: flex;
+    justify-content: center;
 }
 .nav-title {
-    margin: 10px 20px;
+    margin: 10px 10px 10px 20px;
     display: flex;
     align-items: flex-start;
 }
 .nav-links {
-    width: 100%;
+    width: 350px;
     list-style-type: none;
     display: flex;
-    justify-content: flex-end;
+    align-items: flex-start;
+}
+.links {
+    color: inherit;
+    text-decoration: inherit;
+    opacity: 75%;
 }
 li {
     margin: 0px 10px;
 }
+#button {
+    display: flex;
+    align-items: center;
+}
 .btn {
+    height: 30px;
+    width: 100px;
     color: white;
     background-color: #17a2b8;
     border: black;
@@ -47,7 +71,8 @@ li {
 
 .ProfileCard {
     height: auto;
-    width: 350px;
+    width: 400px;
+    margin-right: 10px;
 }
 
 .color {
@@ -203,3 +228,36 @@ p {
 
 /* Education */
 
+.education {
+    height: auto;
+    width: 400px;
+}
+
+.estatus {
+    height: 40px;
+    color: white;
+    background-color: #333333;
+    border: 2px solid #cccccc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 7px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#info {
+    height: 100px;
+    background-color: white;
+    border: 2px solid #cccccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#date {
+    color: #7c7c7c;
+}
